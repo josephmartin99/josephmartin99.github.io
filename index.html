@@ -2,34 +2,24 @@
 <html lang="en">
     <head>
         <title>Search</title>
-        <style>
-        h3 {
-            text-align: right;
-        }
-        form {
-            text-align: center;
-        }
-        input {
-            border-radius: 50px;
-            margin: 10px;
-            padding: 10px;
-        }
-        </style>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h3>
-            <a href="image_search.html" >Image Search</a>
-        </h3>
-        <h3>
-            <a href="advanced_search.html">Advanced Search</a>
-        </h3>
-        <form action="https://google.com/search">
-            <div>
-                <input type="text" name="q">
-            </div>
-            <div>
-                <input type="submit" value="Google Search">
-            </div>
-        </form>
+        <div class="links">
+            <a class="link" href="image_search.html" >Images</a>
+            <a class="link" href="advanced_search.html">Advanced</a>
+        </div>
+        <div class="main">
+            <img id="logo" src="logo.png">
+            <form action="https://google.com/search">
+                <div>
+                    <input class="text_area" type="text" name="q">
+                </div>
+                <div>
+                    <input class="google_button" type="submit" value="Google Search">
+                    <input class="google_button" type="submit" value="I'm Feeling Lucky" name="btnI">
+                </div>
+            </form>
+        </div>
     </body>
 </html>
